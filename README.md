@@ -35,14 +35,12 @@ Symbiote **enchances** the development process of **web** and **native** apps wh
 
 #### Function definition
 ```
-@define_function function_name(type argument, type named=argument, generic_type args_array[], generic_type named_args_hash)
+@define_function <type> function_name(<type> argument, <type> named=argument, <generic_type> args_array[], <generic_type> named_args_hash)
+    return value
 @end
 ```
 ##### Function definition: Short version
-```
-@defun function_name(type argument, type named=argument, generic_type args_array[], generic_type named_args_hash)
-@end
-```
+```@defun```
 
 
 
