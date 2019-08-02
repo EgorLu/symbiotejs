@@ -1,15 +1,15 @@
 ## Symbiote.JS
 <span>
-<img src="https://img.shields.io/badge/build-passing-brightgreen">
-<img src="https://img.shields.io/badge/tests-passing-brightgreen">
-<img src="https://img.shields.io/badge/docker%20build-passing-brightgreen">
-<img src="https://img.shields.io/badge/deployment-passing-brightgreen">
-<img src="https://img.shields.io/badge/downloads-4.6k%2Fmonth-blue">
-<img src="https://img.shields.io/badge/minified%20size-6.65%20kB-blue">
+    <img src="https://img.shields.io/badge/build-passing-brightgreen">
+    <img src="https://img.shields.io/badge/tests-passing-brightgreen">
+    <img src="https://img.shields.io/badge/docker%20build-passing-brightgreen">
+    <img src="https://img.shields.io/badge/deployment-passing-brightgreen">
 </span>
-
-
-<img src="https://img.shields.io/badge/downloads-4.6k%2Fmonth-blue">
+<span>
+    <img src="https://img.shields.io/badge/downloads-4.6k%2Fmonth-blue">
+    <img src="https://img.shields.io/badge/minified%20size-6.65%20kB-blue">
+    <img src="https://img.shields.io/badge/node-%3E%3D%2010.16.1-blue">
+</span>
 
 # One Symbiote to rule them all
 Symbiote.JS brings the best parts of web development while **completely solving** all negative issues that persist in other frameworks.
