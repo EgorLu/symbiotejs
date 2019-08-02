@@ -31,6 +31,14 @@ Symbiote **enchances** the development process of **web** and **native** apps wh
 
 # Specification
 
+```mermaid
+graph LR
+A[Class Prototype] -- Single direction inheritance --> B((SubClass))
+A -- Immutable inheritance --> C(Abstract SubClass)
+B -- Single direction inheritance --> D{BusinessLogic SubClass}
+C -- Class modulation inheritance --> D
+```
+
 functional oop
 
 progressive
