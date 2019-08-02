@@ -33,6 +33,14 @@ Symbiote **enchances** the development process of **web** and **native** apps wh
 
 # Specification
 
+#### Function definition
+```
+@define_function function_name()
+@end
+```
+
+
+
 ```
 A[Class Prototype] -- Single direction inheritance --> B((SubClass))
 A -- Immutable inheritance --> C(Abstract SubClass)
