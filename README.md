@@ -1,5 +1,5 @@
 ## Symbiote.JS
-<img src="./documentation/images/logo_transparent.png">
+<img src="./documentation/images/logo_transparent.png" width=250>
 
 <span>
     <img src="https://img.shields.io/badge/build-passing-brightgreen">
