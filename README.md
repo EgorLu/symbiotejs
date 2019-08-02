@@ -34,12 +34,24 @@ Symbiote **enchances** the development process of **web** and **native** apps wh
 # Specification
 
 #### Function definition
-```
+```js
 @define_function <type> function_name(<type> argument, <type> named=argument, <generic_type> args_array[], <generic_type> named_args_hash)
     return value
 @end
 ```
 **Function definition, short version:** ```@defun```
+**Example:**
+```js
+@defun SafeStr say_hi(SafeStr name)
+    return SafeStr("Hi there, #{&name}")
+@end
+```
+
+#### Variable definition
+```js
+<type> &variable_name
+```
+**Example:** ```SafeInt &age = 29```
 
 
 
