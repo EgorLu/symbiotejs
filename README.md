@@ -39,7 +39,10 @@ Symbiote **enchances** the development process of **web** and **native** apps wh
     return value
 @end
 ```
-**Function definition, short version:** ```@defun```
+#####Function definition, short version:
+```js
+@defun
+```
 **Example:**
 ```js
 @defun SafeStr say_hi(SafeStr name)
