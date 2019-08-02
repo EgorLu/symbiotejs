@@ -39,8 +39,7 @@ Symbiote **enchances** the development process of **web** and **native** apps wh
     return value
 @end
 ```
-##### Function definition: Short version
-```@defun```
+**Function definition, short version:** ```@defun```
 
 
 
