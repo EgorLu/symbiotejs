@@ -39,7 +39,7 @@ Symbiote **enchances** the development process of **web** and **native** apps wh
     return value
 @end
 ```
-#####Function definition, short version:
+##### Function definition, short version:
 ```js
 @defun
 ```
