@@ -54,19 +54,16 @@ Symbiote **enchances** the development process of **web** and **native** apps wh
 ```js
 <type> &variable_name
 ```
-**Example:** ```SafeInt &age = 29```
-
-
-
-
-
-```
-A[Class Prototype] -- Single direction inheritance --> B((SubClass))
-A -- Immutable inheritance --> C(Abstract SubClass)
-B -- Single direction inheritance --> D{BusinessLogic SubClass}
-C -- Class modulation inheritance --> D
+**Example:**
+```js
+SafeInt &age = 29
 ```
 
+
+
+
+
+Single direction inheritance
+Immutable inheritance
 functional oop
-
 progressive
