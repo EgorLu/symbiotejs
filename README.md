@@ -38,6 +38,13 @@ Symbiote **enchances** the development process of **web** and **native** apps wh
 @define_function function_name()
 @end
 ```
+##### Short version
+```
+@defun function_name()
+@end
+```
+
+
 
 
 
