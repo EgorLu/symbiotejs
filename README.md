@@ -1,4 +1,5 @@
 ## Symbiote.JS
+<img src="https://img.shields.io/badge/build-passing-brightgreen">
 
 # One Symbiote to rule them all
 Symbiote.JS brings the best parts of web development while **completely solving** all negative issues that persist in other frameworks.
@@ -9,13 +10,16 @@ develop **brilliant**, **multiplatform**, **blazing-fast** **responsive UIs**.
 Symbiote **enchances** the development process of **web** and **native** apps while bringing the **fun** back to programming.
 
 
-# Key Features / What makes it better than any other framework
+# Key Features
 - Huge community
 - Strong, statical typing
 - Cybernetically secure
 - Modular
 - Easy to learn
 - Guaranteed backward compatibility
+- Custom elements
+- Human-readable
+- Internationalization and localization
 
 # Specification
 
