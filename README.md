@@ -62,6 +62,17 @@ Additionally, compiling ready-to-run code is OS friendly and allows rapid deploy
 #### Basic I/O (!muttability warning)
 ```js
 @import <Text_IO.muttablePrint, Text_IO.muttableInput from "Text_IO">
+
+<SafeFunctionPointer> &out = Text_IO.muttablePrint
+<SafeFunctionPointer> &in = Text_IO.muttableInput
+
+# Output
+&out(SafeStr("Output"))
+
+# Input
+&in()
+# Or save the value into a variable
+<UnsafeGenericType> &foo << &in()
 ```
 
 #### Control structures
@@ -107,10 +118,18 @@ Additionally, compiling ready-to-run code is OS friendly and allows rapid deploy
 
 **Default compiler skin (SafeOOP)**
 ```js
+@import <Text_IO.muttablePrint, Text_IO.muttableInput from "Text_IO">
+
 @defun SafeStr sayHi(SafeStr name)
     return SafeStr("Hi there, #{&name}")
 @end
-%%document << helloWorld() #TODO: Input
+
+<SafeFunctionPointer> &input = Text_IO.muttableInput
+<SafeFunctionPointer> &print = Text_IO.muttablePrint
+
+&print(SafeStr("Please enter your name:\n"))
+<SafeStr> &name << SafeCast(toString() => &input())
+%%document << helloWorld(&name)
 ```
 
 
