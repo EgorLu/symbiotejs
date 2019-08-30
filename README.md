@@ -59,7 +59,7 @@ Additionally, compiling ready-to-run code is OS friendly and allows rapid deploy
 ```js
 <type> &variable_name
 ```
-**Example:**
+##### Example:
 ```js
 SafeInt &age = 29
 ```
