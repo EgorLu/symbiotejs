@@ -49,7 +49,6 @@ Additionally, compiling ready-to-run code is OS friendly and allows rapid deploy
     return value
 @end
 ```
-
 ##### Function definition, short version:
 ```js
 @defun
@@ -59,10 +58,20 @@ Additionally, compiling ready-to-run code is OS friendly and allows rapid deploy
 ```js
 <type> &variable_name
 ```
-##### Example:
+
+#### Basic I/O (!muttability warning)
 ```js
-SafeInt &age = 29
+@import <Text_IO.muttablePrint, Text_IO.muttableInput from "Text_IO">
 ```
+
+#### Control structures
+```js
+@if (SafeBool(True) .and. SafeBool(False) .or. SafeBool(True))
+    return SafeInt(0)
+@end
+```
+
+
 
 # Examples
 
@@ -110,5 +119,4 @@ SafeInt &age = 29
 
 - Single direction inheritance
 - Immutable inheritance
-- functional oop
-- progressive
+- Progressive-Abstractive Functional oop
