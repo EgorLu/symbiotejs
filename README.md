@@ -19,7 +19,6 @@ The Symbiote ecosystem provides **simple**, **elegant** and **efficient** soluti
 develop **brilliant**, **multiplatform**, **blazing-fast** **responsive UIs**.
 Symbiote **enchances** the development process of **web** and **native** apps while bringing the **fun** back to programming.
 
-
 # Key Features
 - Huge community
 - Strong, statical typing
@@ -30,8 +29,19 @@ Symbiote **enchances** the development process of **web** and **native** apps wh
 - Custom elements
 - Human-readable
 - Internationalization and localization
+- Configurable syntax
+- Compilator customization via mixins, skins and lootboxes
 
 # Specification
+
+#### Compilation
+Symbiote.JS uses a very smart compilation system, transpiling into cross-platform code that can be ran in the most modern web browsers
+on all popular Operating Systems.
+Compiled code runs thrice as faster when compared to interpreted code, and is less error prone, thanks to the the compiler
+finding errors in favor of runtime errors.
+
+Additionally, compiling ready-to-run code is OS friendly and allows rapid deployment of the entire code base.
+
 
 #### Function definition
 ```js
@@ -39,15 +49,10 @@ Symbiote **enchances** the development process of **web** and **native** apps wh
     return value
 @end
 ```
+
 ##### Function definition, short version:
 ```js
 @defun
-```
-**Example:**
-```js
-@defun SafeStr say_hi(SafeStr name)
-    return SafeStr("Hi there, #{&name}")
-@end
 ```
 
 #### Variable definition
@@ -59,11 +64,51 @@ Symbiote **enchances** the development process of **web** and **native** apps wh
 SafeInt &age = 29
 ```
 
+# Examples
+
+#### Hello World
+
+**Default compiler skin (SafeOOP)**
+```js
+@defun SafeVoid helloWorld(SafeVoid immutableNull)
+    return SafeStr("Hello World!")
+@end
+%%document << helloWorld()
+```
+
+**Functional compiler skin (HK)**
+```js
+@module Main(SymbioteHK) where @main::IO(main) => putStrLn SafeStr("Hello, World!")
+```
+
+**Functional-Declarative compiler skin (JQ)**
+```js
+@this.getProgram().getWindow().getDocument().getDOM().getShadowDOM().asMuttable().writeIO(SafeStr("Hello, World!"))
+```
+
+**Imperative 1980 compiler skin (AD)**
+```js
+@with SymbioteAD.Text_IO @use SymbioteAD.Text_IO
+@procedure::Hello is @begin
+      Put_Line(SafeStr("Hello, world!"))
+@end::Hello
+```
+
+#### Basic I/O
+
+**Default compiler skin (SafeOOP)**
+```js
+@defun SafeStr sayHi(SafeStr name)
+    return SafeStr("Hi there, #{&name}")
+@end
+%%document << helloWorld() #TODO: Input
+```
 
 
 
+# Future support / Current discussions:
 
-Single direction inheritance
-Immutable inheritance
-functional oop
-progressive
+- Single direction inheritance
+- Immutable inheritance
+- functional oop
+- progressive
